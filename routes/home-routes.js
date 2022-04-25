@@ -15,7 +15,6 @@ router.get('/', (req, res) => {
                 'post_url',
                 'title',
                 'created_at',
-                // [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
             ],
             include: [{
                     model: Comment,
@@ -86,7 +85,7 @@ router.get('/post/:id', (req, res) => {
                 plain: true
             });
 
-            res.render('single-post', {
+            res.render('comments', {
                 post,
                 loggedIn: req.session.loggedIn
             });
