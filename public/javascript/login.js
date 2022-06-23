@@ -27,7 +27,7 @@ async function loginFormHandler(event) {
 async function signupFormHandler(event) {
     event.preventDefault();
 
-    // not using username - const username = document.querySelector('#email-signup').value.trim();
+    // use e-mail instead of username - const username = document.querySelector('#email-signup').value.trim();
     const email = document.querySelector('#email-signup').value.trim();
     const password = document.querySelector('#password-signup').value.trim();
 
