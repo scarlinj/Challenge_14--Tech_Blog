@@ -5,6 +5,7 @@ const session = require('express-session');
 const exphbs = require('express-handlebars');
 const routes = require('./routes/');
 const app = express();
+const mongoose = require('mongoose');
 
 const PORT = process.env.PORT || 3001;
 
