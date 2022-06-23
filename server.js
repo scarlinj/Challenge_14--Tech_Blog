@@ -39,6 +39,15 @@ app.use(express.urlencoded({
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/tech-blog-sj-1847', {
+  useFindAndModify: false,
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
+
+// Use this to log mongo queries being executed!
+mongoose.set('debug', true);
+
 app.use(require('./routes/'));
 
 // turn on connection to db and server - "sync" means Sequelize takes models and connects them to associate database tables.
