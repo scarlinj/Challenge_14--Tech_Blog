@@ -20,7 +20,7 @@
 
 Watch the video demonstration at the link below:
 
-https://drive.google.com/file/d/1dSbOPN3XcHz_70F7-phd4sxEA2J_50ML/view
+- I created a test user as: user@email.com with the password "password".  Feel free to log in from here to explore the blog.
 
 ## Installation
 
@@ -93,4 +93,4 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 - Sequelize
 - Insomnia
 - Express.js
-- Heroku app: 
+- Heroku app: tech-blog-sj-1847
